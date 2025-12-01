@@ -1,0 +1,4 @@
+(executable
+ (name blow_up)  ; Replace with your actual filename without .ml extension
+ (libraries base stdio)
+ (preprocess (pps ppx_jane)))

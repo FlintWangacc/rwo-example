@@ -1,0 +1,11 @@
+(library
+ (name doublylinkedlists)
+ (libraries base)
+ (preprocess (pps ppx_jane))
+ (modules doublylinkedlists))
+
+(executable
+ (name test_dll)
+ (libraries base doublylinkedlists)
+ (preprocess (pps ppx_jane))
+ (modules test_dll))

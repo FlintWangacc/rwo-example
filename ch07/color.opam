@@ -1,0 +1,16 @@
+opam-version: "2.0"
+maintainer: "Your Name <your.email@example.com>"
+authors: ["Your Name"]
+license: "MIT"
+homepage: "https://github.com/your/color"
+bug-reports: "https://github.com/your/color/issues"
+depends: [
+  "ocaml" {>= "4.08.0"}
+  "dune" {>= "2.9"}
+  "base" {>= "v0.14"}
+]
+build: [
+  ["dune" "subst"] {pinned}
+  ["dune" "build" "-p" name "-j" jobs]
+  ["dune" "runtest" "-p" name] {with-test}
+]

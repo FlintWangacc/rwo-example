@@ -1,0 +1,5 @@
+(executable
+  (name timezone)
+  (libraries core core_unix.time_unix)
+  (modules timezone)
+)

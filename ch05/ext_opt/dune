@@ -1,0 +1,7 @@
+;; dune
+
+(library
+ (name ext_opt)
+ (libraries base)
+ (flags (:standard -w -32)))  ;; Assuming you're using Jane Street's Base library
+

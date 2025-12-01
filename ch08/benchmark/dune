@@ -1,0 +1,4 @@
+(executable
+ (name benchmark)
+ (libraries core core_bench core_unix)
+ (preprocess (pps ppx_expect)))

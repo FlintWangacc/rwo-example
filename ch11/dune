@@ -1,0 +1,18 @@
+(executable
+ (name main)
+ (libraries base))
+
+(library
+ (name fqueue)
+ (modules fqueue)
+ (libraries base))
+
+(library
+ (name foldable)
+ (modules foldable)
+ (libraries base))
+
+(library
+ (name fqueue_extended)
+ (modules fqueue_extended)
+ (libraries fqueue foldable))

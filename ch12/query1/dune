@@ -1,0 +1,5 @@
+(executable
+ (name query_handler)
+ (libraries core core_unix.sys_unix sexplib base)
+ (preprocess (pps ppx_jane))
+ (flags (:standard -w -32)))

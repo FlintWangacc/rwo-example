@@ -1,0 +1,5 @@
+(library
+ (name dictionary)
+ (libraries base)
+ (preprocess (pps ppx_jane))
+ (modules dictionary))
